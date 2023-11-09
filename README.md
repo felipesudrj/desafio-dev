@@ -19,26 +19,29 @@ it will end up on the website as
 
   Move it from <b>Receiving</b> to <b>Accounts Payable</b>.
                 
-Input
+## Input ## 
 The input contains several test cases. Each test case is composed by one line that contais a string text, containing zero or more usages of the italic and boldface shortcuts. Each text is between 1 and 50 characters long, inclusive. The only characters allowed in text are the alphabetic characters 'a' to 'z' and 'A' to 'Z', the underscore '_', the asterisk '*', the space character, and the punctuation symbols ',', ';', '.', '!', '?', '-', '(', and ')'. The underscore '_' occurs in text an even number of times. The asterisk '*' occurs in text an even number of times. No substring of text enclosed by a balanced pair of underscores or by a balanced pair of asterisks may contain any further underscores or asterisks.
 
 The end of input is determined by EOF.
 
-Output
+## Output ## 
 Translate each input text into HTML as demonstrated by the examples above (and below). To render a span of text in italics in HTML, you must start with the <i> tag and end with the </i> tag. For boldface text, start with <b> and end with </b>. Print one translated text per line at standard output.
 
 
-Sample Input	
+### Sample Input	###
+```
 You _should_ see the new walrus at the zoo!
 Move it from *Accounts Payable* to *Receiving*.
 I saw _Chelydra serpentina_ in *Centennial Park*.
 _ _ __ _ yabba dabba _ * dooooo * ****
 _now_I_know_*my*_ABC_next_time_*sing*it_with_me
+```
 
-
-Sample Output
+### Sample Output ###
+```
 You <i>should</i> see the new walrus at the zoo!
 Move it from <b>Accounts Payable</b> to <b>Receiving</b>.
 I saw <i>Chelydra serpentina</i> in <b>Centennial Park</b>.
 <i> </i> <i></i> <i> yabba dabba </i> <b> dooooo </b> <b></b><b></b>
 <i>now</i>I<i>know</i><b>my</b><i>ABC</i>next<i>time</i><b>sing</b>it<i>with</i>me
+```
